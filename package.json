@@ -18,6 +18,7 @@
   "homepage": "https://videojs.com",
   "author": "Steve Heffernan",
   "scripts": {
+    "prepare": "npm run build",
     "sandbox": "node build/sandbox.js",
     "prestart": "npm-run-all sandbox",
     "start": "npm-run-all -p watch karma-server",
