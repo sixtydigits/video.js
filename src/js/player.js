@@ -2464,7 +2464,7 @@ class Player extends Component {
    */
   currentTime(seconds) {
     if (typeof seconds !== 'undefined') {
-      if (seconds < 0) {
+      if (seconds < 0 || isNaN(seconds)) {
         seconds = 0;
       }
       if (!this.isReady_ || this.changingSrc_ || !this.tech_ || !this.tech_.isReady_) {
